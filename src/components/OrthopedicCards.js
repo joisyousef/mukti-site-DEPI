@@ -6,22 +6,22 @@ const OrthopedicCards = () => {
     {
       title: "Medical Treatment",
       description: "Specialized treatment",
-      icon: "/about/medical-symbol.png", // Corrected image path
+      icon: "/about/medical-symbol.png",
     },
     {
       title: "Medical Treatment",
       description: "Advanced care",
-      icon: "/about/hospital-building.png", // Corrected image path
+      icon: "/about/hospital-building.png",
     },
     {
       title: "Medical Treatment",
       description: "Expert team",
-      icon: "/about/delivery-truck.png", // Make sure you add the actual image here
+      icon: "/about/delivery-truck.png",
     },
     {
       title: "Medical Treatment",
       description: "Personalized approach",
-      icon: "/about/doctor.png", // Replace with a real image
+      icon: "/about/doctor.png",
     },
   ];
 

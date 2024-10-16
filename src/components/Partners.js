@@ -1,13 +1,7 @@
 import React from "react";
 import "./Partners.css";
 const Partners = () => {
-  const partners = [
-    "logo1.png",
-    "logo2.png",
-    "logo3.png",
-    "logo4.png",
-    // Add more logos as needed
-  ];
+  const partners = ["logo1.png", "logo2.png", "logo3.png", "logo4.png"];
 
   return (
     <section class="about-imgs">
