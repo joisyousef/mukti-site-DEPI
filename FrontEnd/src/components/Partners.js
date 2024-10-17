@@ -1,5 +1,5 @@
 import React from "react";
-import "./Partners.css";
+import "../style/Partners.css";
 const Partners = () => {
   const partners = ["logo1.png", "logo2.png", "logo3.png", "logo4.png"];
 

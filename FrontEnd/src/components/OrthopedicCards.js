@@ -1,5 +1,5 @@
 import React from "react";
-import "./OrthopedicCards.css";
+import "../style/OrthopedicCards.css";
 
 const OrthopedicCards = () => {
   const services = [
