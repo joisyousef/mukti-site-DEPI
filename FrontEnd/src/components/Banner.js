@@ -1,12 +1,12 @@
 import React from "react";
-import "./Banner.css";
+import "../style  /Banner.css";
 
 const Banner = () => {
   return (
     <div
       className="banner text-center"
       style={{
-        backgroundImage: "url(/main-header.jpg)",
+        backgroundImage: "url(../../../../public/main-header.jpg)",
         backgroundSize: "cover",
       }}
     >

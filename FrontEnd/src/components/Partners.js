@@ -7,12 +7,12 @@ const Partners = () => {
     <section class="about-imgs">
       <div class="container">
         <div class="imgs">
-          <img src="/about/1.png" alt="" />
-          <img src="/about/2.png" alt="" />
-          <img src="/about/3.png" alt="" />
-          <img src="/about/4.png" alt="" />
-          <img src="/about/5.png" alt="" />
-          <img src="/about/2.png" alt="" />
+          <img src="../../public/about/ 1.png" alt="" />
+          <img src="../../public/about/ 2.png" alt="" />
+          <img src="../../public/about/ 3.png" alt="" />
+          <img src="../../public/about/ 4.png" alt="" />
+          <img src="../../public/about/ 5.png" alt="" />
+          <img src="../../public/about/ 2.png" alt="" />
         </div>
       </div>
     </section>

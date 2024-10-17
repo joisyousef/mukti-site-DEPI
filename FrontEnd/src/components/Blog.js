@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import "../style/Blog.css";
 
 function Blog() {
   const [blogData, setBlogData] = useState([]);

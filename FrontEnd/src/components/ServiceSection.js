@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 
+import "../style/ServiceSection.css";
+
 function ServiceSection() {
   const [servicesData, setServicesData] = useState([]);
 

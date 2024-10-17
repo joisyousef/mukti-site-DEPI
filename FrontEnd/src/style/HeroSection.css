@@ -1,6 +1,6 @@
 .main-header {
   height: 35vh;
-  background-image: url("../../public/main-header.jpg");
+  background-image: url("../assets/main-header.jpg");
   background-size: cover;
   background-position: center;
   display: flex;

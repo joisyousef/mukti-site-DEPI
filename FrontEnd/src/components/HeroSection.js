@@ -1,4 +1,5 @@
 import React from "react";
+import "../style/HeroSection.css";
 
 function HeroSection({ children, setChange }) {
   return (
