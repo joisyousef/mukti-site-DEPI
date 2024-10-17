@@ -1,35 +1,34 @@
-import React from "react";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 function ServiceSection() {
   const [servicesData, setServicesData] = useState([]);
 
   function fetchData(i) {
-    return servicesData.map(function (services, index) {
-      if (index === i)
-        return (
-          <SingleService
-            src={services.imageUrl}
-            alt={services.title}
-            key={services.id}>
-            {services.description}
-          </SingleService>
-        );
-    });
+    const service = servicesData[i]; // Get the service at the specified index
+    if (service) {
+      return (
+        <SingleService
+          src={service.imageUrl}
+          alt={service.title}
+          key={service.id}
+        >
+          {service.description}
+        </SingleService>
+      );
+    }
+    return null; // Return null if the service does not exist
   }
 
-  useEffect(function () {
+  useEffect(() => {
     async function fetchBlog() {
       const res = await fetch("http://localhost:8000/api/v1/services");
-
       const data = await res.json();
-      /*  console.log(data.data.blogs); */
-
       setServicesData(data.data.services);
     }
 
     fetchBlog();
   }, []);
+
   const [show, setShow] = useState(1);
   return (
     <section className="blog">
@@ -38,7 +37,6 @@ function ServiceSection() {
         {show === 2 && fetchData(1)}
         {show === 3 && fetchData(2)}
         {show === 4 && fetchData(3)}
-        {/* <SingleService /> */}
       </div>
       <Pagination show={show} setShow={setShow} />
     </section>
@@ -58,13 +56,13 @@ function SingleService({ children, src, alt }) {
     </div>
   );
 }
+
 function Pagination({ show, setShow }) {
   return (
     <div className="pagination">
       <p className={show === 1 ? "active" : ""} onClick={() => setShow(1)}>
         1
       </p>
-
       <p className={show === 2 ? "active" : ""} onClick={() => setShow(2)}>
         2
       </p>

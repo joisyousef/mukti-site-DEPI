@@ -28,7 +28,7 @@ function TopBar() {
           </div>
 
           <div className="col">
-            <img src="2.png" alt="phone" />
+            <img src="2.png" alt="email" />
             <span>
               Email : <br />
               <b>Mukti@gmail.com</b>
@@ -36,7 +36,7 @@ function TopBar() {
           </div>
 
           <div className="col">
-            <img src="3.png" alt="phone" />
+            <img src="3.png" alt="address" />
             <span>
               Address : <br />
               <b>12 North West New York</b>
@@ -63,22 +63,22 @@ function BottBar({ setChange }) {
             <a href="doctors.html">Doctors</a>
           </li>
           <li>
-            <a href="#" onClick={() => setChange("Services")}>
+            <button onClick={() => setChange("Services")} className="nav-link">
               Services
-            </a>
+            </button>
           </li>
           <li>
-            <a href="#" onClick={() => setChange("Blog")}>
+            <button onClick={() => setChange("Blog")} className="nav-link">
               Blog
-            </a>
+            </button>
           </li>
           <li>
             <a href="about-us.html">About us</a>
           </li>
           <li>
-            <a href="#" onClick={() => setChange("Contact")}>
+            <button onClick={() => setChange("Contact")} className="nav-link">
               Contact Us
-            </a>
+            </button>
           </li>
         </ul>
       </div>
